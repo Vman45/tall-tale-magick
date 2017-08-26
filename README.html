@@ -1,0 +1,116 @@
+<h1 id="tall-tale-magick"
+>Tall Tale Magick</h1
+><p
+>A story telling tool made with linux shell scripts that use imagemagick, sox, and ffmpeg for building animations.</p
+><div class="figure"
+><img src="flyingPig.jpg"
+   /><p class="caption"
+  ></p
+  ></div
+><div class="figure"
+><img src="ghost.jpg"
+   /><p class="caption"
+  ></p
+  ></div
+><p
+>You can easily create an animation complete with sound using nothing except the command line.</p
+><h4 id="to-get-started-you-will-need"
+>To get started you will need:</h4
+><ul
+><li
+  >linux (a nice operating system for developers)<br
+     /></li
+  ><li
+  >wget<br
+     /></li
+  ><li
+  >imagemagick<br
+     /></li
+  ><li
+  >sox<br
+     /></li
+  ><li
+  >ffmpeg<br
+     /></li
+  ><li
+  >nautilus-open-terminal or similar (optional, allows easy access to a terminal by right clicking)</li
+  ></ul
+><h4 id="step-1"
+>Step 1:</h4
+><p
+>Create a new project by double clicking 'newProject.sh' and click 'Run in Terminal'. Type in the name of your new project and press enter.</p
+><p
+>Note: Make sure the permissions of 'newProject.sh' allows execution.</p
+><h4 id="step-2"
+>Step 2:</h4
+><p
+>Get a terminal within the directory of your project folder (could use nautilus-open-terminal). Type in:<br
+   />$ ls (to view the contents of the directory)<br
+   />$ bash (make sure there is a space after bash and double click 'getImgs.sh' within the terminal then middle click 'getImgs.sh' to copy it)<br
+   />$ bash getImgs.sh (it should look like this)</p
+><p
+>Press enter and it should output:<br
+   />usage:<br
+   />$ bash ./getImgs.sh [image key word or phrase]</p
+><p
+>And you use it just like it says.</p
+><p
+>Note: This program will download images off the internet using 'wget' and a search engine.</p
+><h4 id="step-3"
+>Step 3:</h4
+><p
+>$ bash moveToClips.sh (it should look like this)</p
+><p
+>Press enter and it should output:<br
+   />usage:<br
+   />$ bash ./moveToClips.sh [variable1:#] and or [variable2:#] ['./directory/image_filename' or drag and drop image file here]</p
+><p
+>example:<br
+   />bash ./moveToClips.sh mask:2 blur:2.0 ./directory/image_filename</p
+><p
+>mask -- mask number to use<br
+   />blur -- amount of blur</p
+><p
+>Now go into the 'images' folder and use the example:<br
+   />$ bash ./moveToClips.sh mask:2 blur:2.0 (drag and drop image)</p
+><p
+>Note: It is also possible to use your own images.</p
+><h4 id="step-4"
+>Step 4:</h4
+><p
+>$ bash createClip.sh (it should look like this)<br
+   />Now go into the 'clips' folder and use the example and play around.</p
+><h4 id="step-5"
+>Step 5:</h4
+><p
+>$ bash composeClips.sh (it should look like this)<br
+   />Now go into the 'composedClips' folder and use the example.</p
+><h4 id="step-6"
+>Step 6:</h4
+><p
+>$ bash finalizeComposedClips.sh (it should look like this)<br
+   />Now go into the 'finalize' folder and use the example.</p
+><h4 id="step-7"
+>Step 7:</h4
+><p
+>$ bash finalizeConvertToVid.sh (it should look like this)<br
+   />Use the example.</p
+><h4 id="step-8"
+>Step 8:</h4
+><p
+>$ bash getSnds.sh (it should look like this)</p
+><p
+>Note: This program will download sounds off the internet using 'wget' and a search engine.</p
+><h4 id="step-9"
+>Step 9:</h4
+><p
+>$ bash moveToNormSnds.sh (it should look like this)<br
+   />Now go into the 'sounds' folder and use the example.</p
+><p
+>Note: It is also possible to use your own sounds.</p
+><h4 id="step-10"
+>Step 10:</h4
+><p
+>$ bash finalizeMixAudio.sh (it should look like this)<br
+   />Go into both the 'normSnds' and 'finalize' folders and try out the different options.</p
+>
