@@ -47,7 +47,7 @@ bash ./moveToClips.sh mask:2 blur:2.0 ./directory/image_filename
 mask -- mask number to use  
 blur -- amount of blur  
 
-Now go into the 'images' folder and use the example:  
+Now use the example and go into the 'images' folder to see the results.  
 $ bash ./moveToClips.sh mask:2 blur:2.0 (drag and drop image)  
 
 Note: It is also possible to use your own images.  
