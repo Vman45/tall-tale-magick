@@ -1,5 +1,5 @@
 # Tall Tale Magick
-A story telling tool made with linux shell scripts that use imagemagick, sox, and ffmpeg for building animations.  
+A storytelling tool made with linux shell scripts that use imagemagick, sox, and ffmpeg for building animations.  
 
 ![](https://github.com/lowlevel86/tall-tale-magick/blob/master/flyingPig.jpg)
 
