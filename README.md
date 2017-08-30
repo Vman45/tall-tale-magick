@@ -8,7 +8,7 @@ A storytelling tool made with linux shell scripts that use imagemagick, sox, and
 You can easily create an animation complete with sound using nothing except the command line.  
 
 #### To get started you will need:  
-* linux (a nice operating system for developers)  
+* linux (a useful operating system for developers)  
 * wget  
 * imagemagick  
 * sox  
@@ -21,7 +21,7 @@ Create a new project by double clicking 'newProject.sh' and click 'Run in Termin
 Note: Make sure the permissions of 'newProject.sh' allows execution.  
 
 #### Step 2:  
-Get a terminal within the directory of your project folder (could use nautilus-open-terminal). Type in:  
+Get a terminal within the directory of your project folder (could use nautilus-open-terminal or similar). Type in:  
 $ ls (to view the contents of the directory)  
 $ bash (make sure there is a space after bash and double click 'getImgs.sh' within the terminal then middle click 'getImgs.sh' to copy it)  
 $ bash getImgs.sh (it should look like this)  
