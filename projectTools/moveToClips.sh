@@ -8,7 +8,7 @@ then
    echo "example:"
    echo "bash ./moveToClips.sh mask:2 blur:2.0 ./directory/image_filename"
    echo ""
-   echo "mask -- mask number to use"
+   echo "mask -- mask number to use, -1 for none"
    echo "blur -- amount of blur"
    echo ""
    exit
@@ -83,4 +83,9 @@ echo imgWidthHeight: $imgWidthHeight
 
 #convert is an ImageMagick program (it first changes mask.png size the mask is used as opacity data) then it makes a composite using both the given image and the mask
 #The image is also changed to grayscale
+if [[ $maskVar == "-1" ]]
+then
+convert "$img" -colorspace gray -scale 426x240 -blur 0x$blurVar ./clips/$newClipFolder/0.png
+else
 convert "$img" \( ../projectTools/mask$maskVar.png -scale $imgWidthHeight! \) -compose CopyOpacity -composite -colorspace gray -scale 426x240 -blur 0x$blurVar ./clips/$newClipFolder/0.png
+fi
