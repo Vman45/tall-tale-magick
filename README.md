@@ -82,5 +82,3 @@ Note: It is also possible to use your own sounds.
 #### Step 10:  
 $ bash finalizeMixAudio.sh (it should look like this)  
 Go into both the 'normSnds' and 'finalize' folders and try out the different options.
-
-[paypal.me/CMogged](https://www.paypal.me/CMogged)
